@@ -26,9 +26,7 @@
   color: white;
 }
 
-.navbar-toggler {
-  color: white;
-}
+/*Estilos Index*/
 
 .tituloBanner h1, p {
   text-align: center;
@@ -82,7 +80,7 @@ body {
   background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
-  z-index: 100;
+  overflow-x: hidden;
 }
 
 /** Clases de los distintos headers de las distintas paginas **/
@@ -102,6 +100,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 .headerNosotros {
@@ -134,7 +133,10 @@ body {
 
 .seccionServicios {
   text-align: center;
+  overflow-x: hidden;
 }
+
+
 
 .seccionServicios h2 {
   font-size: 3rem;
@@ -160,9 +162,8 @@ body {
 
 @media only screen and (max-width: 480px) {
 
-
-  
   .seccionServicios img {
+    padding: 0;
     width: 60%;
     height: 40%;
     padding: 0;
@@ -220,6 +221,11 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+
+
+  body {
+    overflow-x: hidden;
+  }
 
   .containerNosotros {
     flex-direction: column;
