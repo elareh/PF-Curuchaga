@@ -16,7 +16,10 @@
 }
 
 .navbar {
-  z-index: 1000;
+  background: #ad5389;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .tituloBanner h1, p {
@@ -31,9 +34,6 @@
 
 }
 
-.tituloBannerPages {
-
-}
 
 .accesos p {
   text-align: center;
@@ -48,7 +48,7 @@
   align-items: center;
 }
 .image-wrapper img {
-  height: 18rem; /* adjust to your preferred height */
+  height: 18rem;
   width: 26rem;
   margin-top: 1rem;
 }
@@ -70,7 +70,9 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: linear-gradient(to top, #8e18cd, #9112bf, #920db1, #920ba4, #900c97, #8f0d94, #8f0e90, #8e0f8d, #900f92, #910e97, #930f9c, #940fa1);
+  background: #FF0099;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   z-index: 100;
 }
@@ -117,11 +119,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-
-/** Clases de navbar y logo **/
-
-
 
 
 /** Clases para pagina "Servicios" **/
@@ -229,19 +226,38 @@ body {
   }
 
   .imagenNosotros {
-    width: 60%;
+    width: 80%;
+    margin-bottom: 2rem;
   }
 }
 
 
 /** Clases para pagina "Galeria" **/
 
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.carousel {
+  width: 50%;
+
+}
+
+.carousel iframe {
+  width: 30rem;
+  height: 30rem;
+  margin-right: 30rem;
+}
+
+
 .seccionImagenes {
   display: inline-block;
-  height: 75vh;
   width: 100%;
   text-align: center;
-  margin-bottom: 15rem;
 }
 
 .contenedorVideo {
@@ -261,14 +277,29 @@ body {
 
 /** Clases para pagina "Contacto" **/
 
-.formularioContacto {
-  display: block;
+.seccionContacto h2 {
   text-align: center;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.formularioContacto input {
-  margin: 0.2rem;
+.formContacto {
+  display: flex;
+  justify-content: center;
+}
+
+.camposForm {
+  width: 60%;
+}
+
+.botonContacto {
+  text-align: center;
+}
+
+.formContacto h2 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .seccionContacto h1 {
@@ -276,13 +307,12 @@ body {
   margin-top: 1.5rem;
 }
 
-.seccionContacto h2 {
-  text-align: center;
-}
 
 
 footer {
-  background-color: #530853;
+  background: #ad5389;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   margin-bottom: 0;
   margin-top: 1rem;
   padding-top: 1rem;

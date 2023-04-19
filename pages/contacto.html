@@ -45,22 +45,32 @@
     </header>
     <main>
       <section class="seccionContacto">
-        <article>
-          <!-- encabezado form -->
-          <h1>CONTACTO</h1>
-          <h2>Envianos tu consulta</h2>
-          <!-- cierre encabezado form -->
-          <!-- inicio form -->
-          <form class="formularioContacto" action="#">
-            <input type="text" placeholder="Nombre"><br>
-              <input type="text" placeholder="Apellido">
-              <br>
-            <input type="number" placeholder="Edad"><br>
-            <textarea name="" id="" cols="60" rows="10" placeholder=" Mensaje"></textarea><br>
-            <input type="submit" value="ENVIAR">
+        <h2>Envianos tu mensaje y te responderemos a la brevedad</h2>
+        <div class="formContacto">
+          <form class="row g-3 camposForm">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputName" class="form-label">Nombre y Apellido</label>
+              <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Telefono</label>
+              <input type="text" class="form-control" id="inputAddress">
+            </div>
+            <div class="col-md-12">
+              <label for="inputZip" class="form-label">Mensaje</label>
+              <textarea class="form-control" rows="3" maxlength="140"></textarea>
+            </div>
+          <div class="botonContacto">
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
           </form>
-          <!-- cierre form -->
-        </article>
+        </div>
       </section>
     </main>
     <footer>
