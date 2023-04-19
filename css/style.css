@@ -31,6 +31,10 @@
 
 }
 
+.tituloBannerPages {
+
+}
+
 .accesos p {
   text-align: center;
   margin-top: 0.2rem;
@@ -44,9 +48,22 @@
   align-items: center;
 }
 .image-wrapper img {
-  height: 19rem; /* adjust to your preferred height */
+  height: 18rem; /* adjust to your preferred height */
   width: 26rem;
   margin-top: 1rem;
+}
+
+.contenedorTituloHeaderPages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorTituloHeaderPages h1 {
+  margin-top: 10rem;
+  backdrop-filter: blur(10px);
+  font-size: 4rem;
 }
 
 /** Body general **/
@@ -104,75 +121,8 @@ body {
 
 /** Clases de navbar y logo **/
 
-.contenedorLogo {
-  width: 40%;
-  display: inline-block;
-  padding-top: 5px;
-}
-
-.logo {
-  width: 20%;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
-}
-
-.navegacion {
-  display: inline-block;
-  font-weight: 700;
-  width: 50%;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  margin-left: 5vw;
-}
-
-.listaItem {
-  list-style: none;
-  display: inline-block;
-  padding-left: 15px;
-  padding-top: 25px;
-}
-
-.linkNav {
-  text-decoration: none;
-  color: white;
-  font-size: 1.5rem;
-}
-
-/** Se hacen 2 clases contenedoras de header, una para el Index y otra para el resto de las paginas
-ya que van a tener un diferente VH **/
 
 
-.contenedorTituloHeader {
-  width: 65%;
-  height: 25vh;
-  margin:0 auto;
-  text-align: center;
-  margin-top: 30vh;
-  backdrop-filter: blur(5px);
-}
-
-.contenedorTituloHeaderPages {
-  width: 35%;
-  height: 20vh;
-  margin:0 auto;
-  text-align: center;
-  margin-top: 20vh;
-  backdrop-filter: blur(5px);
-}
-
-.contenedorTituloHeader h1 {
-  font-size: 4rem;
-}
-
-.contenedorTituloHeader p {
-  font-size: 2rem;
-}
-
-.contenedorTituloHeaderPages h1 {
-  font-size: 6rem;
-  width: 50%;
-  height: 50%;
-}
 
 /** Clases para pagina "Servicios" **/
 
@@ -191,20 +141,9 @@ ya que van a tener un diferente VH **/
 /** Estas clases se usan para las paginas "Servicios" y "Galeria" **/
 
 
-.contenedorCards {
-  width: 30%;
-  display: inline-block;
-  object-fit: contain;
-}
 
 .contenedorCards img {
-  width: 90%;
-  margin: 5px 5px;
   height: 40vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .contenedorCards p {
@@ -214,14 +153,37 @@ ya que van a tener un diferente VH **/
   margin-top: 5px;
 }
 
+@media only screen and (max-width: 480px) {
+
+
+  
+  .seccionServicios img {
+    width: 60%;
+    height: 40%;
+    padding: 0; !important
+  }
+
+  .col-md-6 {
+    margin-right: 10rem;
+  }
+
+  .col-md-4 {
+    margin-right: 10rem;
+  }
+}
+
 /** Clases para la pagina "Nosotros" **/
 
 .seccionNosotros {
-  display: inline-block;
-  height: 65vh;
-  text-align: center;
-  margin-bottom: 15rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex: 0.5;
 }
+
 
 .seccionNosotros h2 {
   text-align: center;
@@ -229,19 +191,48 @@ ya que van a tener un diferente VH **/
   font-size: 4rem;
 }
 
-.seccionNosotros p {
-  width: 50%;
-  display: inline-block;
-  text-align: left;
-  font-weight: 450;
+
+.containerNosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
+
 .imagenNosotros {
+  flex: 0.5;
   width: 40%;
-  background-size: cover;
-  margin: 0 3.5rem 22rem 0;
-  display: inline-block;
+  margin-right: 20px;
 }
+
+
+.seccionNosotros p {
+  flex: 0.5;
+  width: 40%;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .containerNosotros {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .seccionNosotros p {
+    width: 80%;
+  }
+
+  .imagenNosotros {
+    width: 60%;
+  }
+}
+
 
 /** Clases para pagina "Galeria" **/
 
@@ -297,12 +288,6 @@ footer {
   padding-top: 1rem;
 }
 
-
-.mapsFooter {
-  width: 100%;
-  height: 10rem;
-}
-
 .elementsFooter a {
   text-decoration: none;
   color: white;
@@ -324,4 +309,14 @@ footer {
 
 .redes {
   text-align: center;
+}
+
+.listaRedes, .contactoFooter, .mapsFooter {
+  margin-top: 2rem;
+}
+
+.mapsFooter iframe {
+  height: 50%;
+  width: 70%;
+  margin-left: 3rem;
 }
