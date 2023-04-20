@@ -35,7 +35,6 @@
 }
 
 .tituloBanner h1 {
-  margin-top: 15rem;
   backdrop-filter: blur(10px);
 
 }
@@ -76,7 +75,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #FF0099;  /* fallback for old browsers */
+  background: #FF0099;
   background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
@@ -86,12 +85,15 @@ body {
 /** Clases de los distintos headers de las distintas paginas **/
 
 .headerIndex {
+  display: flex;
   height: 100vh;
   background-image: url(../assets/img/banner1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
 }
 
 .headerServicios {
@@ -272,6 +274,7 @@ body {
   display: inline-block;
   width: 100%;
   text-align: center;
+  overflow-x: hidden;
 }
 
 /* .contenedorVideo {
@@ -318,6 +321,13 @@ body {
 
 .botonContacto {
   text-align: center;
+}
+
+.botonEnviar {
+  text-align: center;
+  color: #fff;
+  background-color: #FF0099;
+  border-color: #493240;
 }
 
 .formContacto h2 {
