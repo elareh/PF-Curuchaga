@@ -7,36 +7,38 @@
     <title>Lo de Sonia - Galeria</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/img/favicon.png">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/cbea712936.js" crossorigin="anonymous"></script>
   </head>
   <body>
-      <!-- Clase para el Header de Galeria -->
-    <header class="headerGaleria">
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary navbar sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand fw-bold" href="#">
-            <img src="./assets/img/logo-sony.png" alt="" width="60" height="60" class="d-inline-block align-text-center">
-            La Peluqueria de Sonia
-          </a>
-        </div>
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active text-uppercase fs-5 fw-bold" aria-current="page" href="#">Home</a>
-              <a class="nav-link text-uppercase fs-5 fw-bold" href="#">Nosotros</a>
-              <a class="nav-link text-uppercase fs-5 fw-bold" href="#">Servicios</a>
-              <a class="nav-link text-uppercase fs-5 fw-bold" href="#">Galeria</a>
-              <a class="nav-link text-uppercase fs-5 fw-bold" href="#">Contacto</a>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary navbar sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">
+          <img src="../assets/img/logo-sony.png" alt="" width="60" height="60" class="d-inline-block align-text-center">
+          La Peluqueria de Sonia
+        </a>
+      </div>
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link text-uppercase fs-5 fw-bold" aria-current="page" href="../index.html">Home</a>
+            <a class="nav-link text-uppercase fs-5 fw-bold" href="./nosotros.html">Nosotros</a>
+            <a class="nav-link text-uppercase fs-5 fw-bold" href="./servicios.html">Servicios</a>
+            <a class="nav-link active text-uppercase fs-5 fw-bold" href="./galeria.html">Galeria</a>
+            <a class="nav-link text-uppercase fs-5 fw-bold" href="./contacto.html">Contacto</a>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+      <!-- Clase para el Header de Galeria -->
+    <header class="headerGaleria">
         <section>
           <div class="contenedorTituloHeaderPages">
             <h1>GALERIA</h1>
@@ -47,7 +49,60 @@
       <section class="seccionImagenes">
         <hr class="separador">
           <h2>Imagenes</h2>
-        <div class="contenedorCards">
+        <div class="carouselContainer">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/img/Galeria1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/Galeria2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/Galeria3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <hr class="separador">
+          <h2>Videos</h2>
+        <div class="carouselContainer">
+          <div id="carouselExampleIndicatorsDos" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicatorsDos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicatorsDos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <iframe src="https://www.youtube.com/embed/yfFFOrFntcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="carousel-item">
+                <iframe src="https://www.youtube.com/embed/-rC5JWEyNQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsDos" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsDos" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- <div class="contenedorCards">
           <a href=""><img src="../assets/img/Galeria1.jpg" alt="Cortes"></a>
         </div>
         <div class="contenedorCards">
@@ -55,15 +110,14 @@
         </div>
         <div class="contenedorCards">
           <a href=""><img src="../assets/img/Galeria3.jpg" alt="Teñido"></a>
-        </div>
-        <hr>
-        <h2>Videos</h2>
-        <div class="contenedorVideo">
+        </div> -->
+
+        <!-- <div class="contenedorVideo">
           <iframe class="galeriaVideo" width="560" height="315" src="https://www.youtube.com/embed/yfFFOrFntcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="contenedorVideo">
           <iframe class="galeriaVideo" width="560" height="315" src="https://www.youtube.com/embed/-rC5JWEyNQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
-        </div>
+        </div> -->
       </section>
     </main>
     <footer>
@@ -89,7 +143,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 contactoFooter">
           <h3>Contacto</h3>
           <p>Telefono: 112424242</p>
 
@@ -99,9 +153,9 @@
 
         </div>
           
-        <div class="col-lg-4">
+        <div class="col-lg-4 mapsFooter">
           <h3>Ubicacion</h3>
-          <iframe class="mapsFooter" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52617.684824281125!2d-58.546477658381235!3d-34.48753577010305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb10d9b1a0fcf%3A0xf24f564f43204bed!2sPeluquer%C3%ADa%20Sonia!5e0!3m2!1ses!2sar!4v1678405831333!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52617.684824281125!2d-58.546477658381235!3d-34.48753577010305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb10d9b1a0fcf%3A0xf24f564f43204bed!2sPeluquer%C3%ADa%20Sonia!5e0!3m2!1ses!2sar!4v1678405831333!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <p>Todos los derechos reservados© - Ariel Curuchaga</p>
         </div>
       </div>

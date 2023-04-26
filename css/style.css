@@ -16,8 +16,17 @@
 }
 
 .navbar {
-  z-index: 1000;
+  background: #ad5389;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
+.nav-link {
+  color: white;
+}
+
+/*Estilos Index*/
 
 .tituloBanner h1, p {
   text-align: center;
@@ -26,10 +35,10 @@
 }
 
 .tituloBanner h1 {
-  margin-top: 15rem;
   backdrop-filter: blur(10px);
 
 }
+
 
 .accesos p {
   text-align: center;
@@ -44,29 +53,47 @@
   align-items: center;
 }
 .image-wrapper img {
-  height: 19rem; /* adjust to your preferred height */
+  height: 18rem;
   width: 26rem;
   margin-top: 1rem;
+}
+
+.contenedorTituloHeaderPages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorTituloHeaderPages h1 {
+  margin-top: 10rem;
+  backdrop-filter: blur(10px);
+  font-size: 4rem;
 }
 
 /** Body general **/
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: linear-gradient(to top, #8e18cd, #9112bf, #920db1, #920ba4, #900c97, #8f0d94, #8f0e90, #8e0f8d, #900f92, #910e97, #930f9c, #940fa1);
+  background: #FF0099;
+  background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
-  z-index: 100;
+  overflow-x: hidden;
 }
 
 /** Clases de los distintos headers de las distintas paginas **/
 
 .headerIndex {
+  display: flex;
   height: 100vh;
   background-image: url(../assets/img/banner1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
 }
 
 .headerServicios {
@@ -75,6 +102,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 .headerNosotros {
@@ -102,84 +130,15 @@ body {
 }
 
 
-/** Clases de navbar y logo **/
-
-.contenedorLogo {
-  width: 40%;
-  display: inline-block;
-  padding-top: 5px;
-}
-
-.logo {
-  width: 20%;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
-}
-
-.navegacion {
-  display: inline-block;
-  font-weight: 700;
-  width: 50%;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  margin-left: 5vw;
-}
-
-.listaItem {
-  list-style: none;
-  display: inline-block;
-  padding-left: 15px;
-  padding-top: 25px;
-}
-
-.linkNav {
-  text-decoration: none;
-  color: white;
-  font-size: 1.5rem;
-}
-
-/** Se hacen 2 clases contenedoras de header, una para el Index y otra para el resto de las paginas
-ya que van a tener un diferente VH **/
-
-
-.contenedorTituloHeader {
-  width: 65%;
-  height: 25vh;
-  margin:0 auto;
-  text-align: center;
-  margin-top: 30vh;
-  backdrop-filter: blur(5px);
-}
-
-.contenedorTituloHeaderPages {
-  width: 35%;
-  height: 20vh;
-  margin:0 auto;
-  text-align: center;
-  margin-top: 20vh;
-  backdrop-filter: blur(5px);
-}
-
-.contenedorTituloHeader h1 {
-  font-size: 4rem;
-}
-
-.contenedorTituloHeader p {
-  font-size: 2rem;
-}
-
-.contenedorTituloHeaderPages h1 {
-  font-size: 6rem;
-  width: 50%;
-  height: 50%;
-}
-
 /** Clases para pagina "Servicios" **/
 
 
 .seccionServicios {
   text-align: center;
+  overflow-x: hidden;
 }
+
+
 
 .seccionServicios h2 {
   font-size: 3rem;
@@ -191,20 +150,9 @@ ya que van a tener un diferente VH **/
 /** Estas clases se usan para las paginas "Servicios" y "Galeria" **/
 
 
-.contenedorCards {
-  width: 30%;
-  display: inline-block;
-  object-fit: contain;
-}
 
 .contenedorCards img {
-  width: 90%;
-  margin: 5px 5px;
   height: 40vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .contenedorCards p {
@@ -214,14 +162,36 @@ ya que van a tener un diferente VH **/
   margin-top: 5px;
 }
 
+@media only screen and (max-width: 480px) {
+
+  .seccionServicios img {
+    padding: 0;
+    width: 60%;
+    height: 40%;
+    padding: 0;
+  }
+
+  .col-md-6 {
+    margin-right: 10rem;
+  }
+
+  .col-md-4 {
+    margin-right: 10rem;
+  }
+}
+
 /** Clases para la pagina "Nosotros" **/
 
 .seccionNosotros {
-  display: inline-block;
-  height: 65vh;
-  text-align: center;
-  margin-bottom: 15rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex: 0.5;
 }
+
 
 .seccionNosotros h2 {
   text-align: center;
@@ -229,55 +199,141 @@ ya que van a tener un diferente VH **/
   font-size: 4rem;
 }
 
-.seccionNosotros p {
-  width: 50%;
-  display: inline-block;
-  text-align: left;
-  font-weight: 450;
+
+.containerNosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
+
 .imagenNosotros {
+  flex: 0.5;
   width: 40%;
-  background-size: cover;
-  margin: 0 3.5rem 22rem 0;
-  display: inline-block;
+  margin-right: 20px;
 }
+
+
+.seccionNosotros p {
+  flex: 0.5;
+  width: 40%;
+}
+
+@media only screen and (max-width: 480px) {
+
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .containerNosotros {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .seccionNosotros p {
+    width: 80%;
+  }
+
+  .imagenNosotros {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+}
+
 
 /** Clases para pagina "Galeria" **/
 
-.seccionImagenes {
-  display: inline-block;
-  height: 75vh;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 15rem;
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.contenedorVideo {
+
+.carousel {
+  width: 50%;
+
+}
+
+.carousel iframe {
+  width: 30rem;
+  height: 30rem;
+  margin-right: 30rem;
+}
+
+
+.seccionImagenes {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* .contenedorVideo {
   width: 30%;
   height: 25vh;
   display: inline-block;
   margin-right: 2rem;
   margin-left: 2rem;
-}
-
+} */
+/* 
 .galeriaVideo {
   width: 100%;
   height: 30vh;
   display: inline-block;
-}
+} */
 
+@media only screen and (max-width: 480px) {
+
+
+  .carousel iframe {
+    width: 20rem;
+    height: 20rem;
+    margin-left: 4rem;
+  }
+
+}
 
 /** Clases para pagina "Contacto" **/
 
-.formularioContacto {
-  display: block;
+.seccionContacto h2 {
   text-align: center;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.formularioContacto input {
-  margin: 0.2rem;
+.formContacto {
+  display: flex;
+  justify-content: center;
+}
+
+.camposForm {
+  width: 60%;
+}
+
+.botonContacto {
+  text-align: center;
+}
+
+.botonEnviar {
+  text-align: center;
+  color: #fff;
+  background-color: #FF0099;
+  border-color: #493240;
+}
+
+.formContacto h2 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .seccionContacto h1 {
@@ -285,22 +341,17 @@ ya que van a tener un diferente VH **/
   margin-top: 1.5rem;
 }
 
-.seccionContacto h2 {
-  text-align: center;
-}
 
 
 footer {
-  background-color: #530853;
+  background: #ad5389;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   margin-bottom: 0;
   margin-top: 1rem;
   padding-top: 1rem;
-}
-
-
-.mapsFooter {
-  width: 100%;
-  height: 10rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .elementsFooter a {
@@ -324,4 +375,14 @@ footer {
 
 .redes {
   text-align: center;
+}
+
+.listaRedes, .contactoFooter, .mapsFooter {
+  margin-top: 2rem;
+}
+
+.mapsFooter iframe {
+  height: 50%;
+  width: 70%;
+  margin-left: 3rem;
 }
