@@ -1,0 +1,45 @@
+.seccionServicios {
+    text-align: center;
+    overflow-x: hidden;
+  
+  
+    h2 {
+      font-size: 3rem;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      padding-top: 10px;
+      margin-bottom: 15px;
+    }
+}
+
+.contenedorCards {
+   img {
+     height: 40vh;
+   }
+    
+   p {
+     text-align: center;
+     font-weight: 600;
+     font-size: 1.5rem;
+     margin-top: 5px;
+   }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+  .seccionServicios img {
+     padding: 0;
+     width: 60%;
+     height: 40%;
+     padding: 0;
+   }
+  
+   .col-md-6 {
+     margin-right: 10rem;
+   }
+  
+   .col-md-4 {
+     margin-right: 10rem;
+   }
+}

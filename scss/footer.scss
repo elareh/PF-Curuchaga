@@ -1,0 +1,49 @@
+footer {
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    margin-bottom: 0;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+    .elementsFooter {
+      a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+      }
+  
+      h3 {
+        text-align: center;
+        margin-bottom: 1.2rem;
+        text-decoration: underline;
+      }
+  
+      .listaRedes {
+        text-align: center;
+        
+        img {
+          margin-right: 0.5rem;
+        }
+      }
+      
+      .redes {
+        text-align: center;
+      }
+      
+      .listaRedes, .contactoFooter, .mapsFooter {
+        margin-top: 2rem;
+        text-align: center;
+      }
+      
+      .mapsFooter {
+        iframe {
+          height: 50%;
+          width: 70%;
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
