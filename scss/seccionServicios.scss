@@ -15,6 +15,10 @@
    img {
      height: $card-height;
    }
+
+   img:hover {
+    transform: scale(1.1);
+  }
     
    p {
      text-align: center;

@@ -241,6 +241,9 @@ footer .elementsFooter .mapsFooter iframe {
 .contenedorCards img {
   height: 40vh;
 }
+.contenedorCards img:hover {
+  transform: scale(1.1);
+}
 .contenedorCards p {
   text-align: center;
   font-weight: 600;
@@ -288,11 +291,14 @@ footer .elementsFooter .mapsFooter iframe {
   justify-content: center;
   align-items: center;
 }
-
 .image-wrapper img {
   height: 18rem;
   width: 26rem;
   margin-top: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.image-wrapper img:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=estilos.css.map */
