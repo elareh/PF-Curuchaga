@@ -1,0 +1,14 @@
+.image-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper img {
+  height: 18rem;
+  width: 26rem;
+  margin-top: 1rem;
+}
+
+/*# sourceMappingURL=indexImagenes.css.map */

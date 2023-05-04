@@ -1,7 +1,7 @@
 footer {
     background: #ad5389;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    background: -webkit-linear-gradient(to right, #3c1053, $gradient-color2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, $gradient-color2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
     margin-bottom: 0;
     margin-top: 1rem;
     padding-top: 1rem;
@@ -11,7 +11,7 @@ footer {
     .elementsFooter {
       a {
         text-decoration: none;
-        color: white;
+        color: $text-color;
         text-align: center;
       }
   
@@ -42,7 +42,6 @@ footer {
         iframe {
           height: 50%;
           width: 70%;
-          margin-left: 3rem;
         }
       }
     }

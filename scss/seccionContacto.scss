@@ -24,8 +24,8 @@
         .botonEnviar {
           text-align: center;
           color: #fff;
-          background-color: #FF0099;
-          border-color: #493240;
+          background-color: $button-color;
+          border-color: $button-border-color;
         }
       }
     }
