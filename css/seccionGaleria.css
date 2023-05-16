@@ -13,10 +13,16 @@
   margin-right: 30rem;
 }
 @media only screen and (max-width: 480px) {
+  .carouselContainer .carousel {
+    width: 100%;
+  }
   .carouselContainer .carousel iframe {
     width: 20rem;
     height: 20rem;
-    margin-left: 4rem;
+    margin: 0 auto;
+  }
+  .carouselContainer .carousel img {
+    height: 20rem;
   }
 }
 

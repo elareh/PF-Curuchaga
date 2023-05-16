@@ -16,10 +16,16 @@
   
     @media only screen and (max-width: 480px) {
       .carousel {
+        width: 100%;
+
         iframe {
           width: 20rem;
           height: 20rem;
-          margin-left: 4rem;
+          margin: 0 auto;
+        }
+
+        img {
+          height: 20rem;
         }
       }
     }
