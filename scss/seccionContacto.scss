@@ -1,0 +1,32 @@
+.seccionContacto {
+    h1 {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+  
+    h2 {
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .formContacto {
+      display: flex;
+      justify-content: center;
+  
+      .camposForm {
+        width: 60%;
+      }
+  
+      .botonContacto {
+        text-align: center;
+  
+        .botonEnviar {
+          text-align: center;
+          color: #fff;
+          background-color: $button-color;
+          border-color: $button-border-color;
+        }
+      }
+    }
+  }

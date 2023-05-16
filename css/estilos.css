@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Montserrat:ital,wght@0,200;0,300;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #FF0099;
+  background: -webkit-linear-gradient(to right, #493240, #FF0099); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  overflow-x: hidden;
+}
+
+footer {
+  background: #ad5389; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-bottom: 0;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+footer .elementsFooter a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+footer .elementsFooter h3 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  text-decoration: underline;
+}
+footer .elementsFooter .listaRedes {
+  text-align: center;
+}
+footer .elementsFooter .listaRedes img {
+  margin-right: 0.5rem;
+}
+footer .elementsFooter .redes {
+  text-align: center;
+}
+footer .elementsFooter .listaRedes, footer .elementsFooter .contactoFooter, footer .elementsFooter .mapsFooter {
+  margin-top: 2rem;
+  text-align: center;
+}
+footer .elementsFooter .mapsFooter iframe {
+  height: 50%;
+  width: 70%;
+}
+
+.headerContacto {
+  height: 70vh;
+  background-image: url(../assets/img/julian-hochgesang-Dkn8-zPIbwo-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.headerGaleria {
+  height: 70vh;
+  background-image: url(../assets/img/bannerGaleria.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.headerIndex {
+  display: flex;
+  height: 100vh;
+  background-image: url(../assets/img/banner1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.accesos p {
+  text-align: center;
+  margin-top: 0.2rem;
+  font-size: 2rem;
+}
+
+.headerNosotros {
+  height: 70vh;
+  background-image: url(../assets/img/inicioNosotros.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.headerServicios {
+  height: 70vh;
+  background-image: url(../assets/img/bannerServicios.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.navbar-toggler {
+  display: flex;
+}
+
+.navbar {
+  background: #ad5389; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow-x: hidden;
+}
+.navbar img {
+  width: 60px;
+  height: 60px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.seccionContacto h1 {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.seccionContacto h2 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.seccionContacto .formContacto {
+  display: flex;
+  justify-content: center;
+}
+.seccionContacto .formContacto .camposForm {
+  width: 60%;
+}
+.seccionContacto .formContacto .botonContacto {
+  text-align: center;
+}
+.seccionContacto .formContacto .botonContacto .botonEnviar {
+  text-align: center;
+  color: #fff;
+  background-color: #FF0099;
+  border-color: #493240;
+}
+
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carouselContainer .carousel {
+  width: 50%;
+}
+.carouselContainer .carousel iframe {
+  width: 30rem;
+  height: 30rem;
+  margin-right: 30rem;
+}
+@media only screen and (max-width: 480px) {
+  .carouselContainer .carousel {
+    width: 100%;
+  }
+  .carouselContainer .carousel iframe {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+  }
+  .carouselContainer .carousel img {
+    height: 20rem;
+  }
+}
+
+.seccionImagenes {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.seccionNosotros {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex: 0.5;
+}
+
+.seccionNosotros h2 {
+  text-align: center;
+  margin: 1rem 1rem 1rem 1rem;
+  font-size: 4rem;
+}
+
+.containerNosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.imagenNosotros {
+  flex: 0.5;
+  width: 40%;
+  margin-right: 20px;
+}
+
+.seccionNosotros p {
+  flex: 0.5;
+  width: 40%;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+  .containerNosotros {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .seccionNosotros p {
+    width: 80%;
+  }
+  .imagenNosotros {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+}
+.seccionServicios {
+  text-align: center;
+  overflow-x: hidden;
+}
+.seccionServicios h2 {
+  font-size: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+
+.contenedorCards img {
+  height: 40vh;
+}
+.contenedorCards img:hover {
+  transform: scale(1.1);
+}
+.contenedorCards p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  .seccionServicios img {
+    padding: 0;
+    width: 60%;
+    height: 40%;
+    padding: 0;
+  }
+  .col-md-6 {
+    margin-right: 10rem;
+  }
+  .col-md-4 {
+    margin-right: 10rem;
+  }
+}
+.contenedorTituloHeaderPages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenedorTituloHeaderPages h1 {
+  margin-top: 10rem;
+  backdrop-filter: blur(10px);
+  font-size: 4rem;
+}
+
+.tituloBanner h1, .tituloBanner p {
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.tituloBanner h1 {
+  backdrop-filter: blur(10px);
+}
+
+.image-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.image-wrapper img {
+  height: 18rem;
+  width: 26rem;
+  margin-top: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.image-wrapper img:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,17 @@
+.image-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 18rem;
+    width: 26rem;
+    margin-top: 1rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
