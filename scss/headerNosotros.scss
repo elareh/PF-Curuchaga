@@ -1,7 +1,5 @@
 .headerNosotros {
   height: $header-height;
   background-image: url(../assets/img/inicioNosotros.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  @include header(cover,center,no-repeat);
 }

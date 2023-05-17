@@ -1,8 +1,8 @@
 
 @import "fonts";
+@import "mixins";
 @import "variables";
 @import "general";
-@import "body";
 @import "footer";
 @import "headerContacto";
 @import "headerGaleria";
@@ -15,6 +15,6 @@
 @import "seccionNosotros";
 @import "seccionServicios";
 @import "tituloBanner";
-@import "indexImagenes"
-
+@import "indexImagenes";
+@import "body";
 

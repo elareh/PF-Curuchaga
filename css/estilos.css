@@ -3,14 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background: #FF0099;
-  background: -webkit-linear-gradient(to right, #493240, #FF0099); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
   overflow-x: hidden;
 }
 
@@ -75,7 +67,6 @@ footer .elementsFooter .mapsFooter iframe {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   justify-content: center;
   align-items: center;
 }
@@ -105,6 +96,7 @@ footer .elementsFooter .mapsFooter iframe {
 
 .navbar-toggler {
   display: flex;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -117,9 +109,23 @@ footer .elementsFooter .mapsFooter iframe {
   width: 60px;
   height: 60px;
 }
+@media only screen and (max-width: 480px) {
+  .navbar .navbar {
+    overflow-x: hidden;
+  }
+}
 
 .nav-link {
   color: white;
+  overflow-x: hidden;
+}
+
+.navbar-collapse {
+  overflow-x: hidden;
+}
+
+.navbar-bar {
+  overflow-x: hidden;
 }
 
 .seccionContacto h1 {
@@ -138,11 +144,10 @@ footer .elementsFooter .mapsFooter iframe {
 .seccionContacto .formContacto .camposForm {
   width: 60%;
 }
-.seccionContacto .formContacto .botonContacto {
+.seccionContacto .formContacto .botonContacto, .seccionContacto .formContacto .botonContacto .botonEnviar {
   text-align: center;
 }
 .seccionContacto .formContacto .botonContacto .botonEnviar {
-  text-align: center;
   color: #fff;
   background-color: #FF0099;
   border-color: #493240;
@@ -310,6 +315,20 @@ footer .elementsFooter .mapsFooter iframe {
 }
 .image-wrapper img:hover {
   transform: scale(1.1);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #FF0099;
+  background: -webkit-linear-gradient(to right, #493240, #FF0099); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 480px) {
+  body body {
+    overflow-x: hidden;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

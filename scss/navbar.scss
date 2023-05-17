@@ -1,5 +1,6 @@
 .navbar-toggler {
     display: flex;
+    overflow-x: hidden;
 }
   
 .navbar {
@@ -11,8 +12,23 @@
         width: 60px;
         height: 60px;
     }
+
+    @media only screen and (max-width: 480px) {
+        .navbar {
+          overflow-x: hidden;
+        }
+      }
 }
   
 .nav-link {
  color: $text-color;
+ overflow-x: hidden;
+}
+
+.navbar-collapse {
+    overflow-x: hidden;
+}
+
+.navbar-bar {
+    overflow-x: hidden;
 }

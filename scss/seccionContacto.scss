@@ -22,7 +22,7 @@
         text-align: center;
   
         .botonEnviar {
-          text-align: center;
+          @extend .botonContacto;
           color: #fff;
           background-color: $button-color;
           border-color: $button-border-color;

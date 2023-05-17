@@ -1,19 +1,17 @@
-.headerIndex {
-  display: flex;
-  height: 100vh;
-  background-image: url(../assets/img/banner1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  justify-content: center;
-  align-items: center;
-}
+/* Error: Undefined mixin.
+ *   ,
+ * 5 |     @include header(cover,center,no-repeat);
+ *   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\headerIndex.scss 5:5  root stylesheet */
 
-.accesos p {
-  text-align: center;
-  margin-top: 0.2rem;
-  font-size: 2rem;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 5 \2502      @include header(cover,center,no-repeat);\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\headerIndex.scss 5:5  root stylesheet";
 }
-
-/*# sourceMappingURL=headerIndex.css.map */
